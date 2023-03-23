@@ -158,7 +158,7 @@ Requires `libfranka` >= 0.7.0
   * `franka_example_controllers`:
     - Cartesian impedance example controller: Interpolate desired orientations with slerp and change orientation error
       to quaternion.
-  * **BREAKING** Moved `panda_moveit_config` to [`ros-planning`](https://github.com/ros-planning/panda_moveit_config).
+  * **BREAKING** Moved `panda_moveit_config_vine_tomato` to [`ros-planning`](https://github.com/ros-planning/panda_moveit_config_vine_tomato).
   * Added support for ROS Melodic Morenia.
   * Raised minimum CMake version to 3.4 to match `libfranka`.
   * Add rosparam to choose value of `franka::RealtimeConfig`.
@@ -204,7 +204,7 @@ Requires `libfranka` >= 0.3.0
   * **BREAKING** Removed `arm_id` and default `robot_ip` from launchfiles
   * **BREAKING** Changed namespace of `franka_control` controller manager
   * **BREAKING** Changed behavior of `gripper_action` for compatibility with MoveIt
-  * Changes in `panda_moveit_config`:
+  * Changes in `panda_moveit_config_vine_tomato`:
     * Updated joint limits from URDF
     * Removed `home` poses
     * Fixed fake execution
@@ -220,7 +220,7 @@ Requires `libfranka` >= 0.3.0
   * **BREAKING** Changed signatures in `franka_hw::FrankaModelHandle`
   * **BREAKING** Added epsilon parameters to `franka_gripper/Grasp` action
   * Added Collada meshes for Panda and Hand
-  * Added missing dependencies to `panda_moveit_config` and `franka_example_controllers`
+  * Added missing dependencies to `panda_moveit_config_vine_tomato` and `franka_example_controllers`
   * Fixed linker errors when building with `-DFranka_DIR` while an older version of
     `ros-kinetic-libfranka` is installed
   * Added gripper joint state publisher to `franka_visualization`
